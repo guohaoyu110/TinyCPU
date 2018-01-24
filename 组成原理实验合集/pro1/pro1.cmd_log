@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/pro1/pro1.xst" -ofn "C:/Documents and Settings/pro1/pro1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc myucf.ucf -p xc6slx45-csg324-3 "pro1.ngc" pro1.ngd  
+xst -intstyle ise -ifn "C:/Documents and Settings/pro1/pro1.xst" -ofn "C:/Documents and Settings/pro1/pro1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc myucf.ucf -p xc6slx45-csg324-3 "pro1.ngc" pro1.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pro1_map.ncd pro1.ngd pro1.pcf 
+par -w -intstyle ise -ol high -mt off pro1_map.ncd pro1.ncd pro1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pro1.twx pro1.ncd -o pro1.twr pro1.pcf -ucf myucf.ucf 
+bitgen -intstyle ise -f pro1.ut pro1.ncd 

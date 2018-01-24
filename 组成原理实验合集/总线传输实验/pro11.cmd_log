@@ -1,0 +1,34 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/pro11/pro11.xst" -ofn "C:/Documents and Settings/pro11/pro11.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc myucf.ucf -p xc6slx45-csg324-3 "pro11.ngc" pro11.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pro11_map.ncd pro11.ngd pro11.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc myucf.ucf -p xc6slx45-csg324-3 pro11.ngc pro11.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc myucf.ucf -p xc6slx45-csg324-3 pro11.ngc pro11.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc myucf.ucf -p xc6slx45-csg324-3 pro11.ngc pro11.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pro11_map.ncd pro11.ngd pro11.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc myucf.ucf -p xc6slx45-csg324-3 pro11.ngc pro11.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pro11_map.ncd pro11.ngd pro11.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc myucf.ucf -p xc6slx45-csg324-3 pro11.ngc pro11.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pro11_map.ncd pro11.ngd pro11.pcf 
+par -w -intstyle ise -ol high -mt off pro11_map.ncd pro11.ncd pro11.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pro11.twx pro11.ncd -o pro11.twr pro11.pcf -ucf myucf.ucf 
+bitgen -intstyle ise -f pro11.ut pro11.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc myucf.ucf -p xc6slx45-csg324-3 pro11.ngc pro11.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pro11_map.ncd pro11.ngd pro11.pcf 
+par -w -intstyle ise -ol high -mt off pro11_map.ncd pro11.ncd pro11.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pro11.twx pro11.ncd -o pro11.twr pro11.pcf -ucf myucf.ucf 
+bitgen -intstyle ise -f pro11.ut pro11.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc myucf.ucf -p xc6slx45-csg324-3 pro11.ngc pro11.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pro11_map.ncd pro11.ngd pro11.pcf 
+par -w -intstyle ise -ol high -mt off pro11_map.ncd pro11.ncd pro11.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pro11.twx pro11.ncd -o pro11.twr pro11.pcf -ucf myucf.ucf 
+bitgen -intstyle ise -f pro11.ut pro11.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc myucf.ucf -p xc6slx45-csg324-3 pro11.ngc pro11.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pro11_map.ncd pro11.ngd pro11.pcf 
+par -w -intstyle ise -ol high -mt off pro11_map.ncd pro11.ncd pro11.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pro11.twx pro11.ncd -o pro11.twr pro11.pcf -ucf myucf.ucf 
+bitgen -intstyle ise -f pro11.ut pro11.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc myucf.ucf -p xc6slx45-csg324-3 pro11.ngc pro11.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pro11_map.ncd pro11.ngd pro11.pcf 
+par -w -intstyle ise -ol high -mt off pro11_map.ncd pro11.ncd pro11.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pro11.twx pro11.ncd -o pro11.twr pro11.pcf -ucf myucf.ucf 
+bitgen -intstyle ise -f pro11.ut pro11.ncd 

@@ -1,0 +1,5 @@
+MODULE ab
+	SUBMODULE myrom
+		INSTANCE XLXI_1
+	SUBMODULE clock_divider
+		INSTANCE XLXI_3

@@ -1,0 +1,435 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: pro1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "pro1.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "pro1"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : pro1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+INFO:Xst - Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Documents and Settings\pro1\alu_74181.vhd" into library work
+Parsing entity <alu_74181>.
+Parsing architecture <Behavioral> of entity <alu_74181>.
+Parsing VHDL file "C:\Documents and Settings\pro1\pro1.vhf" into library work
+Parsing entity <pro1>.
+Parsing architecture <BEHAVIORAL> of entity <pro1>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <pro1> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <alu_74181> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Documents and Settings\pro1\alu_74181.vhd" Line 98. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "C:\Documents and Settings\pro1\alu_74181.vhd" Line 123: data_sub_tmp should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Documents and Settings\pro1\alu_74181.vhd" Line 127: data_sub_tmp should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Documents and Settings\pro1\alu_74181.vhd" Line 137: data_sub_tmp should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Documents and Settings\pro1\alu_74181.vhd" Line 147: data_sub_tmp should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "C:\Documents and Settings\pro1\alu_74181.vhd" Line 149. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <pro1>.
+    Related source file is "c:/documents and settings/pro1/pro1.vhf".
+    Summary:
+	no macro.
+Unit <pro1> synthesized.
+
+Synthesizing Unit <alu_74181>.
+    Related source file is "c:/documents and settings/pro1/alu_74181.vhd".
+    Found 5-bit adder for signal <GND_8_o_C_n_arith[4]_add_20_OUT> created at line 108.
+    Found 5-bit adder for signal <GND_8_o_C_n_arith[4]_add_22_OUT> created at line 110.
+    Found 5-bit adder for signal <GND_8_o_C_n_arith[4]_add_25_OUT> created at line 112.
+    Found 5-bit adder for signal <GND_8_o_C_n_arith[4]_add_26_OUT> created at line 115.
+    Found 5-bit adder for signal <n0167> created at line 117.
+    Found 5-bit adder for signal <GND_8_o_C_n_arith[4]_add_30_OUT> created at line 117.
+    Found 5-bit adder for signal <n0173> created at line 119.
+    Found 5-bit adder for signal <GND_8_o_C_n_arith[4]_add_35_OUT> created at line 119.
+    Found 5-bit adder for signal <GND_8_o_C_n_arith[4]_add_38_OUT> created at line 122.
+    Found 5-bit adder for signal <GND_8_o_C_n_arith[4]_add_42_OUT> created at line 126.
+    Found 5-bit adder for signal <n0185> created at line 129.
+    Found 5-bit adder for signal <GND_8_o_C_n_arith[4]_add_45_OUT> created at line 129.
+    Found 5-bit adder for signal <n0191> created at line 131.
+    Found 5-bit adder for signal <GND_8_o_C_n_arith[4]_add_47_OUT> created at line 131.
+    Found 5-bit adder for signal <n0197> created at line 133.
+    Found 5-bit adder for signal <GND_8_o_C_n_arith[4]_add_52_OUT> created at line 133.
+    Found 5-bit adder for signal <GND_8_o_C_n_arith[4]_add_55_OUT> created at line 136.
+    Found 5-bit adder for signal <n0212> created at line 141.
+    Found 5-bit adder for signal <GND_8_o_C_n_arith[4]_add_60_OUT> created at line 141.
+    Found 5-bit adder for signal <n0218> created at line 143.
+    Found 5-bit adder for signal <GND_8_o_C_n_arith[4]_add_64_OUT> created at line 143.
+    Found 5-bit adder for signal <GND_8_o_C_n_arith[4]_add_66_OUT> created at line 146.
+    Found 5-bit subtractor for signal <GND_8_o_GND_8_o_sub_37_OUT<4:0>> created at line 122.
+    Found 5-bit subtractor for signal <n0176> created at line 0.
+    Found 5-bit subtractor for signal <n0179> created at line 0.
+    Found 5-bit subtractor for signal <n0200> created at line 0.
+    Found 5-bit subtractor for signal <n0221> created at line 0.
+    Found 5-bit adder for signal <GND_8_o_C_n_arith[4]_add_57_OUT> created at line 139.
+    Found 4-bit 16-to-1 multiplexer for signal <data_o_logic> created at line 65.
+    Found 5-bit 15-to-1 multiplexer for signal <data_o_arith> created at line 106.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_sub_tmp<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_sub_tmp<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_sub_tmp<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_sub_tmp<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_sub_tmp<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  11 Adder/Subtractor(s).
+	inferred   5 Latch(s).
+	inferred  79 Multiplexer(s).
+Unit <alu_74181> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 11
+ 5-bit adder                                           : 6
+ 5-bit subtractor                                      : 5
+# Latches                                              : 5
+ 1-bit latch                                           : 5
+# Multiplexers                                         : 79
+ 1-bit 2-to-1 multiplexer                              : 46
+ 4-bit 16-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 31
+# Xors                                                 : 1
+ 4-bit xor2                                            : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 10
+ 5-bit adder                                           : 6
+ 5-bit subtractor                                      : 3
+ 5-bit subtractor borrow in                            : 1
+# Multiplexers                                         : 79
+ 1-bit 2-to-1 multiplexer                              : 46
+ 4-bit 16-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 31
+# Xors                                                 : 1
+ 4-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <pro1> ...
+
+Optimizing unit <alu_74181> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block pro1, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : pro1.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 69
+#      LUT2                        : 10
+#      LUT3                        : 2
+#      LUT4                        : 2
+#      LUT5                        : 10
+#      LUT6                        : 37
+#      MUXF7                       : 8
+# FlipFlops/Latches                : 5
+#      LD                          : 5
+# IO Buffers                       : 19
+#      IBUF                        : 14
+#      OBUF                        : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               5  out of  54576     0%  
+ Number of Slice LUTs:                   61  out of  27288     0%  
+    Number used as Logic:                61  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     61
+   Number with an unused Flip Flop:      56  out of     61    91%  
+   Number with an unused LUT:             0  out of     61     0%  
+   Number of fully used LUT-FF pairs:     5  out of     61     8%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    218     8%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------+-------------------------------+-------+
+Clock Signal                                                   | Clock buffer(FF name)         | Load  |
+---------------------------------------------------------------+-------------------------------+-------+
+XLXI_1/S[3]_PWR_11_o_Mux_72_o(XLXI_1/S[3]_PWR_11_o_Mux_72_o1:O)| NONE(*)(XLXI_1/data_sub_tmp_0)| 5     |
+---------------------------------------------------------------+-------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 5.630ns
+   Maximum output required time after clock: 8.285ns
+   Maximum combinational path delay: 10.223ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_1/S[3]_PWR_11_o_Mux_72_o'
+  Total number of paths / destination ports: 178 / 5
+-------------------------------------------------------------------------
+Offset:              5.630ns (Levels of Logic = 5)
+  Source:            XLXN_2 (PAD)
+  Destination:       XLXI_1/data_sub_tmp_4 (LATCH)
+  Destination Clock: XLXI_1/S[3]_PWR_11_o_Mux_72_o falling
+
+  Data Path: XLXN_2 to XLXI_1/data_sub_tmp_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   1.222   1.137  XLXN_2_IBUF (XLXN_2_IBUF)
+     LUT3:I0->O            3   0.205   1.015  XLXI_1/Madd_GND_8_o_C_n_arith[4]_add_38_OUT_cy<0>11 (XLXI_1/Madd_GND_8_o_C_n_arith[4]_add_38_OUT_cy<0>)
+     LUT6:I0->O            2   0.203   0.721  XLXI_1/Madd_GND_8_o_C_n_arith[4]_add_38_OUT_cy<2>11 (XLXI_1/Madd_GND_8_o_C_n_arith[4]_add_38_OUT_cy<2>)
+     LUT5:I3->O            1   0.203   0.684  XLXI_1/Mmux_S[3]_GND_8_o_Mux_69_o12 (XLXI_1/Mmux_S[3]_GND_8_o_Mux_69_o11)
+     LUT4:I2->O            1   0.203   0.000  XLXI_1/Mmux_S[3]_GND_8_o_Mux_69_o19 (XLXI_1/S[3]_GND_8_o_Mux_69_o)
+     LD:D                      0.037          XLXI_1/data_sub_tmp_4
+    ----------------------------------------
+    Total                      5.630ns (2.073ns logic, 3.557ns route)
+                                       (36.8% logic, 63.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_1/S[3]_PWR_11_o_Mux_72_o'
+  Total number of paths / destination ports: 20 / 5
+-------------------------------------------------------------------------
+Offset:              8.285ns (Levels of Logic = 6)
+  Source:            XLXI_1/data_sub_tmp_1 (LATCH)
+  Destination:       F<3> (PAD)
+  Source Clock:      XLXI_1/S[3]_PWR_11_o_Mux_72_o falling
+
+  Data Path: XLXI_1/data_sub_tmp_1 to F<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.498   0.684  XLXI_1/data_sub_tmp_1 (XLXI_1/data_sub_tmp_1)
+     LUT6:I4->O            1   0.203   0.580  XLXI_1/Mmux_data_o_arith14_A_A32 (XLXI_1/Mmux_data_o_arith14_A_A31)
+     LUT6:I5->O            4   0.205   0.788  XLXI_1/Mmux_data_o_arith14_A_A33 (XLXI_1/Mmux_data_o_arith14_A_rs_A<1>)
+     LUT5:I3->O            2   0.203   0.845  XLXI_1/Mmux_data_o_arith14_rs_cy<0>21 (XLXI_1/Mmux_data_o_arith14_rs_cy<0>1)
+     LUT5:I2->O            2   0.205   0.721  XLXI_1/Mmux_data_o_arith14_rs_cy<0>31 (XLXI_1/Mmux_data_o_arith14_rs_cy<0>2)
+     LUT6:I4->O            1   0.203   0.579  XLXI_1/Mmux_C_n_plus411 (XLXN_6_OBUF)
+     OBUF:I->O                 2.571          XLXN_6_OBUF (XLXN_6)
+    ----------------------------------------
+    Total                      8.285ns (4.088ns logic, 4.197ns route)
+                                       (49.3% logic, 50.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 437 / 5
+-------------------------------------------------------------------------
+Delay:               10.223ns (Levels of Logic = 7)
+  Source:            S<0> (PAD)
+  Destination:       F<3> (PAD)
+
+  Data Path: S<0> to F<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            25   1.222   1.557  S_0_IBUF (S_0_IBUF)
+     LUT6:I0->O            1   0.203   0.924  XLXI_1/Mmux_data_o_arith14_A_A31 (XLXI_1/Mmux_data_o_arith14_A_A3)
+     LUT6:I1->O            4   0.203   0.788  XLXI_1/Mmux_data_o_arith14_A_A33 (XLXI_1/Mmux_data_o_arith14_A_rs_A<1>)
+     LUT5:I3->O            2   0.203   0.845  XLXI_1/Mmux_data_o_arith14_rs_cy<0>21 (XLXI_1/Mmux_data_o_arith14_rs_cy<0>1)
+     LUT5:I2->O            2   0.205   0.721  XLXI_1/Mmux_data_o_arith14_rs_cy<0>31 (XLXI_1/Mmux_data_o_arith14_rs_cy<0>2)
+     LUT6:I4->O            1   0.203   0.579  XLXI_1/Mmux_C_n_plus411 (XLXN_6_OBUF)
+     OBUF:I->O                 2.571          XLXN_6_OBUF (XLXN_6)
+    ----------------------------------------
+    Total                     10.223ns (4.810ns logic, 5.413ns route)
+                                       (47.0% logic, 53.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.92 secs
+ 
+--> 
+
+Total memory usage is 150824 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

@@ -1,0 +1,31 @@
+   .org 0x0
+   .set noat
+   .global _start
+_start:
+   lui $1,0x0000          # r1 = 0x00000000
+   lui $2,0xffff          # r2 = 0xffff0000
+   lui $3,0x0505          # r3 = 0x05050000
+   lui $4,0x0000          # r4 = 0x00000000 
+
+   movz $4,$2,$1          # r4 = 0xffff0000
+   movn $4,$3,$1          # r4 = 0xffff0000
+   movn $4,$3,$2          # r4 = 0x05050000
+   or   $5,$4,$0          # r5 = 0x05050000
+   movz $4,$2,$3          # r4 = 0x05050000
+   or   $5,$4,$0          # r5 = 0x05050000
+
+   mthi $0                # hi = 0x00000000
+   mthi $1                # hi = 0x00000000
+   mthi $2                # hi = 0xffff0000
+   mfhi $4                # r4 = 0xffff0000
+   nop
+   ssnop
+   mtlo $3                # lo = 0x05050000
+   mflo $4                # r4 = 0x05050000
+   mfhi $4                # r4 = 0xffff0000
+   mflo $4                # r4 = 0x05050000            
+   
+    
+_loop:
+   j _loop
+   nop

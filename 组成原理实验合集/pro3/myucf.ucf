@@ -1,0 +1,44 @@
+﻿
+###------------CLOCK----------- 
+NET "clk"   LOC = "L15"; 
+#  
+###-------------Atlys led output------------------- 
+NET "XLXN_10[0]"   LOC = U18;  #Atlys LD0 
+NET "XLXN_10[1]"   LOC = M14;  #Atlys LD1 
+NET "XLXN_10[2]"   LOC = N14;  #Atlys LD2 
+NET "XLXN_10[3]"   LOC = L14;  #Atlys LD3 
+NET "XLXN_10[4]"   LOC = M13;  #Atlys LD4 
+NET "XLXN_10[5]"   LOC = D4;   #Atlys LD5 
+NET "XLXN_10[6]"   LOC = P16;  #Atlys LD6 
+NET "XLXN_10[7]"   LOC = N12;  #Atlys LD7 
+#  
+###-----------Atlys Switch input------------------- 
+NET "XLXN_5[0]"    LOC = A10;  #Atlys sw0 
+NET "XLXN_5[1]"    LOC = D14;  #Atlys sw1
+NET "XLXN_5[2]"    LOC = C14;  #Atlys sw2 
+NET "XLXN_5[3]"    LOC = P15;  #Atlys sw3 
+NET "XLXN_5[4]"    LOC = P12;  #Atlys sw4 
+NET "XLXN_5[5]"    LOC = R5;   #Atlys sw5 
+NET "XLXN_5[6]"    LOC = T5;   #Atlys sw6 
+NET "XLXN_5[7]"    LOC = E4;   #Atlys sw7 
+#  
+###------------EES261 switch input---------- 
+NET "XLXN_11"  LOC = "U11";    #SW20 
+NET "XLXN_13"  LOC = "R10";    #SW19 
+NET "XLXN_14"  LOC = "U10";    #SW18 
+NET "XLXN_4"   LOC = "R8";     #SW17 
+#  
+NET "XLXN_8"   LOC = "M8";    #SW16 
+NET "XLXN_9"   LOC = "U8";    #SW15 
+
+
+##----------EES261  leds output------------ 
+NET "XLXN_12<0>" LOC = "U16";    #LED1 
+NET "XLXN_12<1>" LOC = "U15";    #LED2 
+NET "XLXN_12<2>" LOC = "U13";    #LED3 
+NET "XLXN_12<3>" LOC = "M11";    #LED4 
+NET "XLXN_12<4>" LOC = "R11";    #LED5 
+NET "XLXN_12<5>" LOC = "T12";    #LED6 
+NET "XLXN_12<6>" LOC = "N10";    #LED7 
+NET "XLXN_12<7>" LOC = "M10";    #LED8 #
+

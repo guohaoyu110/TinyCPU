@@ -1,0 +1,8 @@
+sch2sym -intstyle ise -family spartan6 -refsym ab {C:/Documents and Settings/zx/ab.sch} {C:/Documents and Settings/zx/ab.sym} 
+xst -intstyle ise -ifn "C:/Documents and Settings/zx/ab.xst" -ofn "C:/Documents and Settings/zx/ab.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc myucf.ucf -p xc6slx45-csg324-3 "ab.ngc" ab.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ab_map.ncd ab.ngd ab.pcf 
+par -w -intstyle ise -ol high -mt off ab_map.ncd ab.ncd ab.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ab.twx ab.ncd -o ab.twr ab.pcf -ucf myucf.ucf 
+bitgen -intstyle ise -f ab.ut ab.ncd 
+bitgen -intstyle ise -f ab.ut ab.ncd 

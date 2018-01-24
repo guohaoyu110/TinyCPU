@@ -1,0 +1,464 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: pro11.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "pro11.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "pro11"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : pro11
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+INFO:Xst - Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Documents and Settings\pro11\reg_74377.vhd" into library work
+Parsing entity <reg_74377>.
+Parsing architecture <Behavioral> of entity <reg_74377>.
+Parsing VHDL file "C:\Documents and Settings\pro11\reg_74373.vhd" into library work
+Parsing entity <reg_74373>.
+Parsing architecture <Behavioral> of entity <reg_74373>.
+Parsing VHDL file "C:\Documents and Settings\pro11\reg_74244.vhd" into library work
+Parsing entity <reg_74244>.
+Parsing architecture <Behavioral> of entity <reg_74244>.
+Parsing VHDL file "C:\Documents and Settings\pro11\data_bus.vhd" into library work
+Parsing entity <data_bus>.
+Parsing architecture <Behavioral> of entity <data_bus>.
+Parsing VHDL file "C:\Documents and Settings\pro11\pro11.vhf" into library work
+Parsing entity <pro11>.
+Parsing architecture <BEHAVIORAL> of entity <pro11>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <pro11> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <reg_74244> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <reg_74377> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <reg_74373> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <data_bus> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "C:\Documents and Settings\pro11\pro11.vhf" Line 48: Net <XLXI_4_data_in3_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Documents and Settings\pro11\pro11.vhf" Line 49: Net <XLXI_4_data_in4_openSignal[7]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <pro11>.
+    Related source file is "c:/documents and settings/pro11/pro11.vhf".
+INFO:Xst:3210 - "c:/documents and settings/pro11/pro11.vhf" line 115: Output port <data_out4> of the instance <XLXI_4> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <XLXI_4_data_in3_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_4_data_in4_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <pro11> synthesized.
+
+Synthesizing Unit <reg_74244>.
+    Related source file is "c:/documents and settings/pro11/reg_74244.vhd".
+    Found 1-bit tristate buffer for signal <Qout<7>> created at line 45
+    Found 1-bit tristate buffer for signal <Qout<6>> created at line 45
+    Found 1-bit tristate buffer for signal <Qout<5>> created at line 45
+    Found 1-bit tristate buffer for signal <Qout<4>> created at line 45
+    Found 1-bit tristate buffer for signal <Qout<3>> created at line 45
+    Found 1-bit tristate buffer for signal <Qout<2>> created at line 45
+    Found 1-bit tristate buffer for signal <Qout<1>> created at line 45
+    Found 1-bit tristate buffer for signal <Qout<0>> created at line 45
+    Summary:
+	inferred   8 Tristate(s).
+Unit <reg_74244> synthesized.
+
+Synthesizing Unit <reg_74377>.
+    Related source file is "c:/documents and settings/pro11/reg_74377.vhd".
+    Found 8-bit register for signal <Qout>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <reg_74377> synthesized.
+
+Synthesizing Unit <reg_74373>.
+    Related source file is "c:/documents and settings/pro11/reg_74373.vhd".
+    Found 8-bit register for signal <data_reg>.
+    Found 1-bit tristate buffer for signal <Qout<7>> created at line 55
+    Found 1-bit tristate buffer for signal <Qout<6>> created at line 55
+    Found 1-bit tristate buffer for signal <Qout<5>> created at line 55
+    Found 1-bit tristate buffer for signal <Qout<4>> created at line 55
+    Found 1-bit tristate buffer for signal <Qout<3>> created at line 55
+    Found 1-bit tristate buffer for signal <Qout<2>> created at line 55
+    Found 1-bit tristate buffer for signal <Qout<1>> created at line 55
+    Found 1-bit tristate buffer for signal <Qout<0>> created at line 55
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   8 Tristate(s).
+Unit <reg_74373> synthesized.
+
+Synthesizing Unit <data_bus>.
+    Related source file is "c:/documents and settings/pro11/data_bus.vhd".
+    Found 8-bit register for signal <bus_data_reg>.
+    Found 1-bit tristate buffer for signal <data_io1<7>> created at line 62
+    Found 1-bit tristate buffer for signal <data_io1<6>> created at line 62
+    Found 1-bit tristate buffer for signal <data_io1<5>> created at line 62
+    Found 1-bit tristate buffer for signal <data_io1<4>> created at line 62
+    Found 1-bit tristate buffer for signal <data_io1<3>> created at line 62
+    Found 1-bit tristate buffer for signal <data_io1<2>> created at line 62
+    Found 1-bit tristate buffer for signal <data_io1<1>> created at line 62
+    Found 1-bit tristate buffer for signal <data_io1<0>> created at line 62
+    Found 1-bit tristate buffer for signal <data_io2<7>> created at line 63
+    Found 1-bit tristate buffer for signal <data_io2<6>> created at line 63
+    Found 1-bit tristate buffer for signal <data_io2<5>> created at line 63
+    Found 1-bit tristate buffer for signal <data_io2<4>> created at line 63
+    Found 1-bit tristate buffer for signal <data_io2<3>> created at line 63
+    Found 1-bit tristate buffer for signal <data_io2<2>> created at line 63
+    Found 1-bit tristate buffer for signal <data_io2<1>> created at line 63
+    Found 1-bit tristate buffer for signal <data_io2<0>> created at line 63
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred  16 Tristate(s).
+Unit <data_bus> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 3
+ 8-bit register                                        : 3
+# Multiplexers                                         : 3
+ 8-bit 2-to-1 multiplexer                              : 3
+# Tristates                                            : 32
+ 1-bit tristate buffer                                 : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+# Multiplexers                                         : 3
+ 8-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2042 - Unit data_bus: 16 internal tristates are replaced by logic (pull-up yes): data_io1<0>, data_io1<1>, data_io1<2>, data_io1<3>, data_io1<4>, data_io1<5>, data_io1<6>, data_io1<7>, data_io2<0>, data_io2<1>, data_io2<2>, data_io2<3>, data_io2<4>, data_io2<5>, data_io2<6>, data_io2<7>.
+WARNING:Xst:2042 - Unit reg_74373: 8 internal tristates are replaced by logic (pull-up yes): Qout<0>, Qout<1>, Qout<2>, Qout<3>, Qout<4>, Qout<5>, Qout<6>, Qout<7>.
+WARNING:Xst:2042 - Unit reg_74244: 8 internal tristates are replaced by logic (pull-up yes): Qout<0>, Qout<1>, Qout<2>, Qout<3>, Qout<4>, Qout<5>, Qout<6>, Qout<7>.
+
+Optimizing unit <pro11> ...
+
+Optimizing unit <reg_74244> ...
+
+Optimizing unit <reg_74377> ...
+
+Optimizing unit <reg_74373> ...
+
+Optimizing unit <data_bus> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block pro11, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : pro11.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 19
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 9
+#      LUT6                        : 8
+# FlipFlops/Latches                : 24
+#      FDE                         : 16
+#      FDRE                        : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 30
+#      IBUF                        : 14
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              24  out of  54576     0%  
+ Number of Slice LUTs:                   18  out of  27288     0%  
+    Number used as Logic:                18  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     29
+   Number with an unused Flip Flop:       5  out of     29    17%  
+   Number with an unused LUT:            11  out of     29    37%  
+   Number of fully used LUT-FF pairs:    13  out of     29    44%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          31
+ Number of bonded IOBs:                  31  out of    218    14%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 24    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.438ns (Maximum Frequency: 695.628MHz)
+   Minimum input arrival time before clock: 3.580ns
+   Maximum output required time after clock: 3.701ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.438ns (frequency: 695.628MHz)
+  Total number of paths / destination ports: 32 / 24
+-------------------------------------------------------------------------
+Delay:               1.438ns (Levels of Logic = 1)
+  Source:            XLXI_4/bus_data_reg_7 (FF)
+  Destination:       XLXI_4/bus_data_reg_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: XLXI_4/bus_data_reg_7 to XLXI_4/bus_data_reg_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             4   0.447   0.684  XLXI_4/bus_data_reg_7 (XLXI_4/bus_data_reg_7)
+     LUT6:I5->O            1   0.205   0.000  XLXI_4/Mmux_bus_data_reg[7]_data_in1[7]_mux_11_OUT8 (XLXI_4/bus_data_reg[7]_data_in1[7]_mux_11_OUT<7>)
+     FDRE:D                    0.102          XLXI_4/bus_data_reg_7
+    ----------------------------------------
+    Total                      1.438ns (0.754ns logic, 0.684ns route)
+                                       (52.5% logic, 47.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 72 / 32
+-------------------------------------------------------------------------
+Offset:              3.580ns (Levels of Logic = 3)
+  Source:            oen (PAD)
+  Destination:       XLXI_4/bus_data_reg_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: oen to XLXI_4/bus_data_reg_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.222   0.907  oen_IBUF (oen_IBUF)
+     LUT2:I0->O            1   0.203   0.944  XLXI_4/Mmux_bus_data_reg[7]_data_in1[7]_mux_11_OUT1_SW0 (N2)
+     LUT6:I0->O            1   0.203   0.000  XLXI_4/Mmux_bus_data_reg[7]_data_in1[7]_mux_11_OUT1 (XLXI_4/bus_data_reg[7]_data_in1[7]_mux_11_OUT<0>)
+     FDRE:D                    0.102          XLXI_4/bus_data_reg_0
+    ----------------------------------------
+    Total                      3.580ns (1.730ns logic, 1.850ns route)
+                                       (48.3% logic, 51.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              3.701ns (Levels of Logic = 1)
+  Source:            XLXI_4/bus_data_reg_7 (FF)
+  Destination:       XLXN_15<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: XLXI_4/bus_data_reg_7 to XLXN_15<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             4   0.447   0.683  XLXI_4/bus_data_reg_7 (XLXI_4/bus_data_reg_7)
+     OBUF:I->O                 2.571          XLXN_15_7_OBUF (XLXN_15<7>)
+    ----------------------------------------
+    Total                      3.701ns (3.018ns logic, 0.683ns route)
+                                       (81.6% logic, 18.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.438|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.70 secs
+ 
+--> 
+
+Total memory usage is 149160 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

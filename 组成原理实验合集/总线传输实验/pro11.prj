@@ -1,0 +1,5 @@
+vhdl work "reg_74377.vhd"
+vhdl work "reg_74373.vhd"
+vhdl work "reg_74244.vhd"
+vhdl work "data_bus.vhd"
+vhdl work "pro11.vhf"

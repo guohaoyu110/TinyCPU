@@ -1,0 +1,3 @@
+vhdl work "myrom.vhd"
+vhdl work "clock_divider.vhd"
+vhdl work "ab.vhf"

@@ -1,0 +1,261 @@
+--------------------------------------------------------------------------------
+Release 13.4 Trace  (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml pro1.twx pro1.ncd -o pro1.twr pro1.pcf -ucf myucf.ucf
+
+Design file:              pro1.ncd
+Physical constraint file: pro1.pcf
+Device,package,speed:     xc6slx45,csg324,C,-3 (PRODUCTION 1.21 2012-01-07)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock S<0>
+------------+------------+------------+------------+------------+-----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                             | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)            | Phase  |
+------------+------------+------------+------------+------------+-----------------------------+--------+
+A<0>        |    2.560(F)|      SLOW  |    0.117(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+A<1>        |    1.919(F)|      SLOW  |    0.353(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+A<2>        |    2.239(F)|      SLOW  |   -0.244(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+A<3>        |    1.845(F)|      SLOW  |    0.521(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+B<0>        |    2.091(F)|      SLOW  |    0.829(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+B<1>        |    1.322(F)|      SLOW  |    0.247(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+B<2>        |    1.354(F)|      SLOW  |    0.411(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+B<3>        |    1.166(F)|      SLOW  |    1.059(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+XLXN_2      |    1.991(F)|      SLOW  |    0.689(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+------------+------------+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock S<1>
+------------+------------+------------+------------+------------+-----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                             | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)            | Phase  |
+------------+------------+------------+------------+------------+-----------------------------+--------+
+A<0>        |    2.502(F)|      SLOW  |    0.179(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+A<1>        |    1.861(F)|      SLOW  |    0.415(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+A<2>        |    2.181(F)|      SLOW  |   -0.182(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+A<3>        |    1.787(F)|      SLOW  |    0.583(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+B<0>        |    2.033(F)|      SLOW  |    0.891(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+B<1>        |    1.264(F)|      SLOW  |    0.309(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+B<2>        |    1.296(F)|      SLOW  |    0.473(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+B<3>        |    1.108(F)|      SLOW  |    1.121(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+XLXN_2      |    1.933(F)|      SLOW  |    0.751(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+------------+------------+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock S<2>
+------------+------------+------------+------------+------------+-----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                             | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)            | Phase  |
+------------+------------+------------+------------+------------+-----------------------------+--------+
+A<0>        |    1.626(F)|      SLOW  |    1.094(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+A<1>        |    0.985(F)|      SLOW  |    1.330(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+A<2>        |    1.305(F)|      SLOW  |    0.733(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+A<3>        |    0.911(F)|      SLOW  |    1.498(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+B<0>        |    1.157(F)|      SLOW  |    1.806(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+B<1>        |    0.388(F)|      SLOW  |    1.224(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+B<2>        |    0.420(F)|      SLOW  |    1.388(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+B<3>        |    0.232(F)|      SLOW  |    2.036(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+XLXN_2      |    1.057(F)|      SLOW  |    1.666(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+------------+------------+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock S<3>
+------------+------------+------------+------------+------------+-----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                             | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)            | Phase  |
+------------+------------+------------+------------+------------+-----------------------------+--------+
+A<0>        |    1.585(F)|      SLOW  |    1.138(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+A<1>        |    0.944(F)|      SLOW  |    1.374(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+A<2>        |    1.264(F)|      SLOW  |    0.777(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+A<3>        |    0.870(F)|      SLOW  |    1.542(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+B<0>        |    1.116(F)|      SLOW  |    1.850(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+B<1>        |    0.347(F)|      SLOW  |    1.268(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+B<2>        |    0.379(F)|      SLOW  |    1.432(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+B<3>        |    0.191(F)|      SLOW  |    2.080(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+XLXN_2      |    1.016(F)|      SLOW  |    1.710(F)|      SLOW  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+------------+------------+------------+------------+------------+-----------------------------+--------+
+
+Clock S<0> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                             | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)            | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+F<0>        |        10.629(F)|      SLOW  |         6.302(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+F<1>        |        11.094(F)|      SLOW  |         6.347(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+F<2>        |        12.228(F)|      SLOW  |         6.880(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+F<3>        |        13.653(F)|      SLOW  |         7.138(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+XLXN_6      |        12.925(F)|      SLOW  |         6.423(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+
+Clock S<1> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                             | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)            | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+F<0>        |        10.691(F)|      SLOW  |         6.306(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+F<1>        |        11.156(F)|      SLOW  |         6.351(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+F<2>        |        12.290(F)|      SLOW  |         6.884(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+F<3>        |        13.715(F)|      SLOW  |         7.142(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+XLXN_6      |        12.987(F)|      SLOW  |         6.427(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+
+Clock S<2> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                             | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)            | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+F<0>        |        11.606(F)|      SLOW  |         6.988(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+F<1>        |        12.071(F)|      SLOW  |         7.033(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+F<2>        |        13.205(F)|      SLOW  |         7.566(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+F<3>        |        14.630(F)|      SLOW  |         7.824(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+XLXN_6      |        13.902(F)|      SLOW  |         7.109(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+
+Clock S<3> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                             | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)            | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+F<0>        |        11.650(F)|      SLOW  |         7.014(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+F<1>        |        12.115(F)|      SLOW  |         7.059(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+F<2>        |        13.249(F)|      SLOW  |         7.592(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+F<3>        |        14.674(F)|      SLOW  |         7.850(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+XLXN_6      |        13.946(F)|      SLOW  |         7.135(F)|      FAST  |XLXI_1/S[3]_PWR_11_o_Mux_72_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+
+Clock to Setup on destination clock S<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S<0>           |         |         |    0.880|    0.880|
+S<2>           |         |         |    0.311|    0.311|
+S<3>           |         |         |    0.401|    0.401|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock S<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S<0>           |         |         |    0.822|    0.822|
+S<2>           |         |         |    0.253|    0.253|
+S<3>           |         |         |    0.343|    0.343|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock S<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S<0>           |         |         |   -0.054|   -0.054|
+S<2>           |         |         |   -0.477|   -0.477|
+S<3>           |         |         |   -0.413|   -0.413|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock S<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S<0>           |         |         |   -0.095|   -0.095|
+S<2>           |         |         |   -0.503|   -0.503|
+S<3>           |         |         |   -0.439|   -0.439|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |F<0>           |    8.995|
+A<0>           |F<1>           |    9.389|
+A<0>           |F<2>           |   10.523|
+A<0>           |F<3>           |   11.739|
+A<0>           |XLXN_6         |   10.974|
+A<1>           |F<1>           |    9.217|
+A<1>           |F<2>           |   10.351|
+A<1>           |F<3>           |   11.567|
+A<1>           |XLXN_6         |   10.802|
+A<2>           |F<2>           |   10.027|
+A<2>           |F<3>           |   10.898|
+A<2>           |XLXN_6         |    9.932|
+A<3>           |F<3>           |    9.525|
+A<3>           |XLXN_6         |    9.054|
+B<0>           |F<0>           |    9.459|
+B<0>           |F<1>           |    9.544|
+B<0>           |F<2>           |   10.611|
+B<0>           |F<3>           |   11.827|
+B<0>           |XLXN_6         |   11.062|
+B<1>           |F<1>           |    9.598|
+B<1>           |F<2>           |   10.732|
+B<1>           |F<3>           |   11.948|
+B<1>           |XLXN_6         |   11.183|
+B<2>           |F<2>           |    9.860|
+B<2>           |F<3>           |   10.731|
+B<2>           |XLXN_6         |    9.765|
+B<3>           |F<3>           |    9.644|
+B<3>           |XLXN_6         |    8.854|
+S<0>           |F<0>           |    8.864|
+S<0>           |F<1>           |    9.303|
+S<0>           |F<2>           |   10.437|
+S<0>           |F<3>           |   11.653|
+S<0>           |XLXN_6         |   10.888|
+S<1>           |F<0>           |    9.247|
+S<1>           |F<1>           |    9.848|
+S<1>           |F<2>           |   10.704|
+S<1>           |F<3>           |   11.920|
+S<1>           |XLXN_6         |   11.155|
+S<2>           |F<0>           |    9.558|
+S<2>           |F<1>           |    9.731|
+S<2>           |F<2>           |   10.865|
+S<2>           |F<3>           |   12.081|
+S<2>           |XLXN_6         |   11.316|
+S<3>           |F<0>           |    9.846|
+S<3>           |F<1>           |   10.406|
+S<3>           |F<2>           |   11.540|
+S<3>           |F<3>           |   12.756|
+S<3>           |XLXN_6         |   11.991|
+XLXN_1         |F<0>           |    7.854|
+XLXN_1         |F<1>           |    7.632|
+XLXN_1         |F<2>           |    7.889|
+XLXN_1         |F<3>           |    8.659|
+XLXN_1         |XLXN_6         |    7.803|
+XLXN_2         |F<0>           |    8.768|
+XLXN_2         |F<1>           |    8.663|
+XLXN_2         |F<2>           |    9.450|
+XLXN_2         |F<3>           |   10.666|
+XLXN_2         |XLXN_6         |    9.901|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Oct 13 10:57:54 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 166 MB
+
+
+

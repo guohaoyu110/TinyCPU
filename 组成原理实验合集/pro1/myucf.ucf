@@ -1,0 +1,118 @@
+###------------CLOCK-----------
+#NET "clk"   LOC = "L15";
+#
+###-------------Atlys led output-------------------
+#NET "atlys_led[0]"   LOC = U18;  #Atlys LD0
+#NET "atlys_led[1]"   LOC = M14;  #Atlys LD1
+#NET "atlys_led[2]"   LOC = N14;  #Atlys LD2
+#NET "atlys_led[3]"   LOC = L14;  #Atlys LD3
+#NET "atlys_led[4]"   LOC = M13;  #Atlys LD4
+#NET "atlys_led[5]"   LOC = D4;   #Atlys LD5
+#NET "atlys_led[6]"   LOC = P16;  #Atlys LD6
+#NET "atlys_led[7]"   LOC = N12;  #Atlys LD7
+#
+###-----------Atlys Switch input-------------------
+#NET "atlys_sw[0]"    LOC = A10;  # Atlys sw0
+#NET "atlys_sw[1]"    LOC = D14;  # Atlys sw1
+#NET "atlys_sw[2]"    LOC = C14;  # Atlys sw2
+#NET "atlys_sw[3]"    LOC = P15;  # Atlys sw3
+#NET "atlys_sw[4]"    LOC = P12;  # Atlys sw4
+#NET "atlys_sw[5]"    LOC = R5;   # Atlys sw5
+#NET "atlys_sw[6]"    LOC = T5;   # Atlys sw6
+#NET "atlys_sw[7]"    LOC = E4;   # Atlys sw7
+#
+###------------EES261 switch input----------
+#NET "swt[19]" LOC = "U11";    #SW20
+#NET "swt[18]" LOC = "R10";    #SW19
+#NET "swt[17]" LOC = "U10";   #SW18
+#NET "swt[16]" LOC = "R8";   #SW17
+#
+#NET "swt[15]" LOC = "M8";  #SW16
+#NET "swt[14]" LOC = "U8";   #SW15
+
+NET "XLXN_1" LOC="U7" ;#SW14
+NET "XLXN_2" LOC="N7" ;#SW13
+
+NET "S[0]" LOC="T6" ;#SW12
+NET "S[1]" LOC="R7" ;#SW11
+NET "S[2]" LOC="N6" ;#SW10
+NET "S[3]" LOC="U5" ;#SW9
+
+
+NET "B[0]" LOC="V5" ;#SW8
+NET "B[1]" LOC="P7" ;#SW7
+NET "B[2]" LOC="T7" ;#SW6
+NET "B[3]" LOC="V6" ;#SW5
+
+NET "A[0]" LOC="P8" ;#SW4
+NET "A[1]" LOC="V7" ;#SW3
+NET "A[2]" LOC="V8" ;#SW2
+NET "A[3]" LOC="N8" ;#SW1
+
+#NET "swt[13]" LOC = "U7";   #SW14
+#NET "swt[12]" LOC = "N7";   #SW13
+#
+#NET "swt[11]" LOC = "T6";   #SW12
+#NET "swt[10]" LOC = "R7";   #SW11
+#NET "swt[9]" LOC = "N6";    #SW10
+#NET "swt[8]" LOC = "U5";    #SW9
+#
+#NET "swt[7]" LOC = "V5";    #SW8
+#NET "swt[6]" LOC = "P7";    #SW7
+#NET "swt[5]" LOC = "T7";    #SW6
+#NET "swt[4]" LOC = "V6";    #SW5
+#
+#NET "swt[3]" LOC = "P8";    #SW4
+#NET "swt[2]" LOC = "V7";    #SW3
+#NET "swt[1]" LOC = "V8";    #SW2
+#NET "swt[0]" LOC = "N8";    #SW1
+# 
+##----------EES261  leds output------------
+#NET "led<0>" LOC = "U16";    #LED1
+#NET "led<1>" LOC = "U15";    #LED2
+#NET "led<2>" LOC = "U13";    #LED3
+#NET "led<3>" LOC = "M11";    #LED4
+#NET "led<4>" LOC = "R11";    #LED5
+#NET "led<5>" LOC = "T12";    #LED6
+#NET "led<6>" LOC = "N10";    #LED7
+#NET "led<7>" LOC = "M10";    #LED8
+#
+NET "F<3>" LOC ="U16";#LED1
+NET "F<2>" LOC ="U15";#LED2
+NET "F<1>" LOC ="U13";#LED3
+NET "F<0>" LOC ="M11";#LED4
+
+NET "XLXN_6" LOC="R11";#LED5
+
+
+NET "S[0]" LOC="T6" ;#SW12
+NET "S[1]" LOC="R7" ;#SW11
+NET "S[2]" LOC="N6" ;#SW10
+NET "S[3]" LOC="U5" ;#SW9
+
+
+NET "B[0]" LOC="V5" ;#SW8
+NET "B[1]" LOC="P7" ;#SW7
+NET "B[2]" LOC="T7" ;#SW6
+NET "B[3]" LOC="V6" ;#SW5
+
+NET "A[0]" LOC="P8" ;#SW4
+NET "A[1]" LOC="V7" ;#SW3
+NET "A[2]" LOC="V8" ;#SW2
+NET "A[3]" LOC="N8" ;#SW1
+
+###-------hex7seg-------------------
+# NET "an<0>"  LOC = "V16";
+# NET "an<1>"  LOC = "V15";
+# NET "an<2>"  LOC = "V13";
+# NET "an<3>"  LOC = "N11";
+# 
+# NET "a_to_g<0>"  LOC = "T8";     #a
+# NET "a_to_g<1>"  LOC = "V10";    #b
+# NET "a_to_g<2>"  LOC = "T10";    #c
+# NET "a_to_g<3>"  LOC = "V11";    #d
+# NET "a_to_g<4>"  LOC = "N9";     #e 
+# NET "a_to_g<5>"  LOC = "P11";    #f
+# NET "a_to_g<6>"  LOC = "V12";    #g
+# NET "dp"         LOC = "T11";    #dp
+###--------------END----------

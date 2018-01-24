@@ -1,0 +1,13 @@
+Release 13.4 Drc O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Fri Oct 13 10:57:59 2017
+
+drc -z pro1.ncd pro1.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_1/S[3]_PWR_11_o_Mux_72_o is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+DRC detected 0 errors and 1 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
